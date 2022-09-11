@@ -1,5 +1,9 @@
 #!/bin/bash
 
+useradd kartik
+
+su kartik
+
 source vars.sh
 
 # Make the Directory if it doesn't exist
