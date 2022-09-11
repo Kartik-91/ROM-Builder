@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source vars.sh
+
 # Change to the Source Directory
 cd $SYNC_PATH
 
