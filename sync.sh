@@ -6,7 +6,7 @@ source vars.sh
 mkdir -p $SYNC_PATH
 
 # Change to the Source Directory
-cd ~/work
+cd $SYNC_PATH
 
 # Init Repo
 repo init --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH
