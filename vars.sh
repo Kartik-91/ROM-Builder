@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Manifest
-export MANIFEST="https://github.com/PixelExperience/manifest"
-export MANIFEST_BRANCH="eleven"
+export MANIFEST="https://github.com/LineageOS/android.git"
+export MANIFEST_BRANCH="lineage-18.1"
 
 # Device Info
 export DEVICE="pissarro" # Codename
