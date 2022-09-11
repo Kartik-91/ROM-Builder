@@ -29,7 +29,7 @@ export LUNCH_COMBO="lineage_pissarro-eng" # eg: "aosp_miatoll-userdebug", No nee
 export TARGET="bacon" # eg: "bacon", No need if USE_BRUNCH_AS_TARGET is set to true
 
 # Output File (to upload)
-export OUTPUT_FILE="Pissarro*.zip" # eg: "PixelExperience*.zip"
+export OUTPUT_FILE="crDroidAndroid*.zip" # eg: "PixelExperience*.zip"
 
 # Extra Command
 export EXTRA_CMD=""
