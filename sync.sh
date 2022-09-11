@@ -16,8 +16,8 @@ repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle
 
 # Clone Trees
 git clone --single-branch --depth=1 $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }
-wget https://siddrive.ga/0:/vendor.img device/Xiaomi/Pissarro/prebuilts
-wget https://siddrive.ga/0:/odm.img device/Xiaomi/Pissarro/prebuilts
+wget https://siddrive.ga/0:/vendor.img device/xiaomi/pissarro/prebuilts
+wget https://siddrive.ga/0:/odm.img device/xiaomi/pissarro/prebuilts
 git clone --single-branch --depth=1 $DCT_LINK $DCT_PATH
 git clone --single-branch --depth=1 $VT_LINK $VT_PATH
 git clone --single-branch --depth=1 $VCT_LINK $VCT_PATH
