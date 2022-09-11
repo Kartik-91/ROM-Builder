@@ -10,7 +10,7 @@ export OEM="xiaomi"
 export PLATFORM="mt6877" # eg: sm6250, mt6765 etc.
 
 # Trees
-export DT_LINK="https://github.com/Kartik-91/device_xiaomi_pissarro"
+export DT_LINK="https://github.com/Pranav-Talmale/android_device_xiaomi_pissarro"
 export DCT_LINK="" # Device Common Tree, Leave Blank if None
 export VT_LINK="https://github.com/Pranav-Talmale/vendor_xiaomi_pissarro"
 export VCT_LINK="" # Vendor Common Tree, Leave Blank if None
