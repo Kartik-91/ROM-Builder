@@ -1,7 +1,9 @@
 #!/bin/bash
 
+source vars.sh
+
 # Make the Directory if it doesn't exist
-mkdir ~/work
+mkdir -p $SYNC_PATH
 
 # Change to the Source Directory
 cd ~/work
