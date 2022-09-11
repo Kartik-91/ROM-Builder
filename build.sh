@@ -1,7 +1,9 @@
 #!/bin/bash
 
+source vars.sh
+
 # Change to the Source Directory
-cd ~/work
+cd $SYNC_PATH
 
 # Set-up ccache
 if [ -z "$CCACHE_SIZE" ]; then
