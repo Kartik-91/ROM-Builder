@@ -5,8 +5,8 @@ export MANIFEST="https://github.com/PixelExperience/manifest"
 export MANIFEST_BRANCH="eleven"
 
 # Device Info
-export DEVICE="Pissarro" # Codename
-export OEM="Xiaomi"
+export DEVICE="pissarro" # Codename
+export OEM="xiaomi"
 export PLATFORM="mt6877" # eg: sm6250, mt6765 etc.
 
 # Trees
