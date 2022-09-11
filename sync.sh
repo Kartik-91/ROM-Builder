@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Make the Directory if it doesn't exist
-mkdir -p $SYNC_PATH
+mkdir $SYNC_PATH
 
 # Change to the Source Directory
 cd $SYNC_PATH
