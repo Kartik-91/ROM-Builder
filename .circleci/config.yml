@@ -3,9 +3,9 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ghcr.io/sushrut1101/docker:latest
+      - image: ghcr.io/sushrut1101/docker:arch
 
-    resource_class: 2xlarge
+    
     steps:
       - checkout
 
