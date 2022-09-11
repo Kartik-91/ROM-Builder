@@ -24,9 +24,9 @@ export VCT_PATH="vendor/$OEM/${PLATFORM}-common"
 export KT_PATH="kernel/$OEM/$PLATFORM"
 
 # Lunch Combos and Targets
-export USE_BRUNCH_AS_TARGET=true # set it to "true" if you want to use brunch
-export LUNCH_COMBO="" # eg: "aosp_miatoll-userdebug", No need if USE_BRUNCH_AS_TARGET is set to true
-export TARGET="" # eg: "bacon", No need if USE_BRUNCH_AS_TARGET is set to true
+export USE_BRUNCH_AS_TARGET=false # set it to "true" if you want to use brunch
+export LUNCH_COMBO="lineage_pissarro-eng" # eg: "aosp_miatoll-userdebug", No need if USE_BRUNCH_AS_TARGET is set to true
+export TARGET="bacon" # eg: "bacon", No need if USE_BRUNCH_AS_TARGET is set to true
 
 # Output File (to upload)
 export OUTPUT_FILE="" # eg: "PixelExperience*.zip"
