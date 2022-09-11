@@ -35,7 +35,7 @@ export OUTPUT_FILE="" # eg: "PixelExperience*.zip"
 export EXTRA_CMD=""
 
 # Not Recommended to Change
-export SYNC_PATH=~/work
+export SYNC_PATH=work
 export USE_CCACHE=1
 export CCACHE_EXEC=$(which ccache)
 export CCACHE_DIR="${SYNC_PATH}/.ccache"
