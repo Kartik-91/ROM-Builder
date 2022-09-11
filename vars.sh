@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # Manifest
-export MANIFEST=""
-export MANIFEST_BRANCH=""
+export MANIFEST="https://github.com/crdroidandroid/android.git"
+export MANIFEST_BRANCH="11.0"
 
 # Device Info
-export DEVICE="" # Codename
-export OEM=""
-export PLATFORM="" # eg: sm6250, mt6765 etc.
+export DEVICE="Pissarro" # Codename
+export OEM="Xiaomi"
+export PLATFORM="mt6877" # eg: sm6250, mt6765 etc.
 
 # Trees
-export DT_LINK=""
+export DT_LINK="https://github.com/Kartik-91/device_xiaomi_pissarro"
 export DCT_LINK="" # Device Common Tree, Leave Blank if None
-export VT_LINK=""
+export VT_LINK="https://github.com/Pranav-Talmale/vendor_xiaomi_pissarro"
 export VCT_LINK="" # Vendor Common Tree, Leave Blank if None
 export KT_LINK="" # Kernel Tree, Leave Blank if Prebuilt
 
@@ -24,7 +24,7 @@ export VCT_PATH="vendor/$OEM/${PLATFORM}-common"
 export KT_PATH="kernel/$OEM/$PLATFORM"
 
 # Lunch Combos and Targets
-export USE_BRUNCH_AS_TARGET=false # set it to "true" if you want to use brunch
+export USE_BRUNCH_AS_TARGET=true # set it to "true" if you want to use brunch
 export LUNCH_COMBO="" # eg: "aosp_miatoll-userdebug", No need if USE_BRUNCH_AS_TARGET is set to true
 export TARGET="" # eg: "bacon", No need if USE_BRUNCH_AS_TARGET is set to true
 
