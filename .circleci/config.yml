@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: ghcr.io/sushrut1101/docker:arch
+      - image: ghcr.io/kartik-91/docker:latest
 
     
     steps:
