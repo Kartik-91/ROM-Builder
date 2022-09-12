@@ -4,7 +4,6 @@ jobs:
   build:
     docker:
       - image: ghcr.io/kartik-91/docker:ubuntu
-      - user: ubuntu
 
     resource_class: xlarge
     steps:
