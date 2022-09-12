@@ -5,7 +5,8 @@ source vars.sh
 sudo apt install systemd-zram-generator
 cd /etc/systemd/
 curl https://raw.githubusercontent.com/Kartik-91/test/main/zram-generator.conf > zram-generator.conf
-
+sudo systemctl daemon-reload
+sudo systemctl restart systemd-zram-setup@zram0
 su - ubuntu
 
 # Make the Directory if it doesn't exist
