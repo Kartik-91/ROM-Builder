@@ -2,9 +2,7 @@
 
 source vars.sh
 
-tmate
-tmate show-messages > ssh.log
-cat ssh.log
+su - ubuntu
 
 # Make the Directory if it doesn't exist
 mkdir -p $SYNC_PATH
