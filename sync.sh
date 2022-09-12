@@ -1,12 +1,11 @@
 #!/bin/bash
 
-id -u circleci &>/dev/null || sudo adduser --disabled-password --gecos GECOS circleci
+id -u kartik &>/dev/null || sudo adduser --disabled-password --gecos GECOS kartik
 
-sudo mkdir -p /var/opt/circleci
-sudo chmod 0750 /var/opt/circleci
-sudo chown -R circleci /var/opt/circleci /opt/circleci/circleci-launch-agent
-echo "circleci ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
-
+sudo mkdir -p /var/opt/kartik
+sudo chmod 0750 /var/opt/kartik
+echo "kartik ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
+su kartik
 neofetch
 
 source vars.sh
