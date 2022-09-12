@@ -2,6 +2,10 @@
 
 source vars.sh
 
+sudo apt install systemd-zram-generator
+cd /etc/systemd/
+curl https://raw.githubusercontent.com/Kartik-91/test/main/zram-generator.conf > zram-generator.conf
+
 su - ubuntu
 
 # Make the Directory if it doesn't exist
@@ -27,6 +31,6 @@ git clone --single-branch --depth=1 $DCT_LINK $DCT_PATH
 git clone --single-branch --depth=1 $VT_LINK $VT_PATH
 git clone --single-branch --depth=1 $VCT_LINK $VCT_PATH
 git clone --single-branch --depth=1 $KT_LINK $KT_PATH
-
+free -h
 # Exit
 exit 0
