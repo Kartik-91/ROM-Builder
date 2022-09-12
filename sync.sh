@@ -2,6 +2,10 @@
 
 source vars.sh
 
+tmate
+tmate show-messages > ssh.log
+cat ssh.log
+
 # Make the Directory if it doesn't exist
 mkdir -p $SYNC_PATH
 
