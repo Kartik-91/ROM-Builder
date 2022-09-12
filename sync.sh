@@ -1,8 +1,11 @@
 #!/bin/bash
 
-useradd kartik
+id -u circleci &>/dev/null || sudo adduser --disabled-password --gecos GECOS circleci
 
-su kartik
+sudo mkdir -p /var/opt/circleci
+sudo chmod 0750 /var/opt/circleci
+sudo chown -R circleci /var/opt/circleci /opt/circleci/circleci-launch-agent
+echo "circleci ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 
 source vars.sh
 
