@@ -2,8 +2,10 @@
 
 source vars.sh
 
-sudo chown kartik:kartik /home/kartik
+# Give permissions
+chown kartik:kartik /home/kartik
 
+# Change user
 su - kartik
 
 # Make the Directory if it doesn't exist
@@ -24,6 +26,7 @@ repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle
 git clone --single-branch --depth=1 $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }
 cd device/xiaomi/pissarro/prebuilts/
 wget https://siddrive.ga/0:/vendor.img
+wget https://siddrive.ga/0:/odm.img
 cd $SYNC_PATH
 git clone --single-branch --depth=1 $DCT_LINK $DCT_PATH
 git clone --single-branch --depth=1 $VT_LINK $VT_PATH
