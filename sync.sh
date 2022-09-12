@@ -2,6 +2,7 @@
 
 source vars.sh
 
+sudo apt install kmod
 sudo apt install systemd-zram-generator
 cd /etc/systemd/
 curl https://raw.githubusercontent.com/Kartik-91/test/main/zram-generator.conf > zram-generator.conf
