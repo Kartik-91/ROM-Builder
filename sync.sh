@@ -2,14 +2,7 @@
 
 source vars.sh
 
-sudo fallocate -l 20G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-sudo cp /etc/fstab /etc/fstab.bak
-echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-
-su - ubuntu
+su ubuntu
 
 # Make the Directory if it doesn't exist
 mkdir -p $SYNC_PATH
