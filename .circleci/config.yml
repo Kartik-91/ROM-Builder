@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: ghcr.io/kartik-91/docker:ubuntu
 
-    resource_class: 2xlarge
+    resource_class: xlarge
     steps:
       - checkout
 
