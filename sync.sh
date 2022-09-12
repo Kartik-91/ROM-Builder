@@ -2,6 +2,8 @@
 
 source vars.sh
 
+sudo chown kartik:kartik /home/kartik
+
 su - kartik
 
 # Make the Directory if it doesn't exist
