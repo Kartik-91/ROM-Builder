@@ -2,7 +2,7 @@
 
 source vars.sh
 
-su ubuntu
+su - ubuntu
 
 # Make the Directory if it doesn't exist
 mkdir -p $SYNC_PATH
