@@ -2,9 +2,6 @@
 
 source vars.sh
 
-# Give permissions
-chown kartik:kartik /home/kartik
-
 # Change user
 su - kartik
 
