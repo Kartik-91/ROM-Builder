@@ -7,9 +7,7 @@ sudo chmod 0750 /var/opt/circleci
 sudo chown -R circleci /var/opt/circleci /opt/circleci/circleci-launch-agent
 echo "circleci ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 
-lscpu
-df -h
-free -h
+neofetch
 
 source vars.sh
 
@@ -20,7 +18,8 @@ mkdir -p $SYNC_PATH
 cd $SYNC_PATH
 
 # Init Repo
-repo init --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH && y
+git config --global color.ui false
+repo init --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH
 
 # Sync the Sources
 repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle
