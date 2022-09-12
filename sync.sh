@@ -17,6 +17,7 @@ cd $SYNC_PATH
 
 # Init Repo
 repo init --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH
+y
 
 # Sync the Sources
 repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle
@@ -32,6 +33,7 @@ git clone --single-branch --depth=1 $DCT_LINK $DCT_PATH
 git clone --single-branch --depth=1 $VT_LINK $VT_PATH
 git clone --single-branch --depth=1 $VCT_LINK $VCT_PATH
 git clone --single-branch --depth=1 $KT_LINK $KT_PATH
+lscpu
 
 # Exit
 exit 0
