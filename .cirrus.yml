@@ -1,9 +1,7 @@
-
-
 task:
   name: "Rom Builder"
   only_if: $CIRRUS_REPO_OWNER == 'Kartik-91'
-  timeout_in: 180m
+  timeout_in: 120m
   container:
       image: ghcr.io/kartik-91/docker:ubuntu
       cpu: 4
