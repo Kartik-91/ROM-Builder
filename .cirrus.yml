@@ -1,19 +1,24 @@
+env:
+
+    # Config
+    CONFIG: config.sh
+
+    CIRRUS_SHELL: bash
+
 task:
   name: "Rom Builder"
   timeout_in: 120m
   container:
       image: ghcr.io/kartik-91/docker:ubuntu
-      cpu: 4
-      memory: 16G
-
-    Sources:
-      - source vars.sh
+      cpu: 8
+      memory: 22G
 
     Sync:
-      - bash sync.sh
+      - curl -sL https://github.com/Kartik-91/ROM-Builder/raw/master/sync.sh | bash
 
     Build:
-      - bash build.sh
+      - curl -sL https://github.com/Kartik-91/ROM-Builder/raw/master/build.sh | bash
 
     Upload:
-      - bash upload.sh
+      - export TIMEOUT=43200
+      - curl -sL https://github.com/Kartik-91/ROM-Builder/raw/master/upload.sh | bash
