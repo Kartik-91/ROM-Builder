@@ -35,7 +35,7 @@ export OUTPUT_FILE="lineage-18.1*.zip" # eg: "PixelExperience*.zip"
 export EXTRA_CMD=""
 
 # Not Recommended to Change
-export SYNC_PATH=/home/kartik/work
+export SYNC_PATH=/home/ubuntu/work
 export USE_CCACHE=1
 export CCACHE_EXEC=$(which ccache)
 export CCACHE_DIR="${SYNC_PATH}/.ccache"
