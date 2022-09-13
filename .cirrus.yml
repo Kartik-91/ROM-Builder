@@ -11,7 +11,7 @@ task:
   container:
       image: ghcr.io/kartik-91/docker:ubuntu
       cpu: 8
-      memory: 22G
+      memory: 20G
 
     Sync:
       - curl -sL https://github.com/Kartik-91/ROM-Builder/raw/master/sync.sh | bash
