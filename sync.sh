@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source vars.sh
+source $CONFIG
 
 # Change user
 su - kartik
