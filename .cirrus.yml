@@ -2,31 +2,20 @@
 
 task:
   name: "Rom Builder"
-  timeout_in: 120m
+  timeout_in: 180m
   container:
       image: ghcr.io/kartik-91/docker:ubuntu
       cpu: 4
       memory: 16G
-    steps:
-      - checkout
 
-      - run:
-          name: Source Vars
-          command: |
-            source vars.sh
+    Sources:
+      - source vars.sh
 
-      - run:
-          name: Sync
-          command: |
-            bash sync.sh
+    Sync:
+      - bash sync.sh
 
-      - run:
-          name: Build
-          command: |
-            bash build.sh
+    Build:
+      - bash build.sh
 
-      - run:
-          name: Upload
-          command: |
-            export TIMEOUT=43200
-            bash upload.sh
+    Upload:
+      - bash upload.sh
