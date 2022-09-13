@@ -9,16 +9,16 @@ task:
   name: "Rom Builder"
   timeout_in: 120m
   container:
-      image: ghcr.io/kartik-91/docker:ubuntu
+      image: ghcr.io/Kartik-91/docker:ubuntu
       cpu: 8
       memory: 20G
 
-    Sync:
+  Sync_script:
       - curl -sL https://github.com/Kartik-91/ROM-Builder/raw/master/sync.sh | bash
 
-    Build:
+  Build_script:
       - curl -sL https://github.com/Kartik-91/ROM-Builder/raw/master/build.sh | bash
 
-    Upload:
-      - export TIMEOUT=43200
-      - curl -sL https://github.com/Kartik-91/ROM-Builder/raw/master/upload.sh | bash
+  Upload_script:
+      - export TIMEOUT=43200 # Link timeout (in minutes)
+      - curl https://github.com/Kartik-91/ROM-Builder/raw/master/upload.sh | bash
