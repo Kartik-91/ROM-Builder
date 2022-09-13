@@ -1,7 +1,7 @@
 env:
 
     # Config
-    CONFIG: config.sh
+    CONFIG: vars.sh
 
     CIRRUS_SHELL: bash
 
