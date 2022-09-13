@@ -3,7 +3,7 @@
 source $CONFIG
 
 # Change user
-su - kartik
+su - ubuntu
 
 # Make the Directory if it doesn't exist
 mkdir -p $SYNC_PATH
